@@ -42,6 +42,7 @@ func TestAddGetDelete(t *testing.T) {
 		require.NoError(t, err)
 	}
 	defer db.Close()
+
 	store := NewParcelStore(db)
 	parcel := getTestParcel()
 
